@@ -154,7 +154,7 @@ function getCorrectAnswer(questions, index) {
         // alert("The Correct Answer is " + quest + "\n" + "your have choosen " + value + "\n" + "Great work The answer Match....");
         swal({
             title: "Good job!",
-            text: "The Correct Answer is : " + quest + "\n" + "your have choosen : " + value,
+            text: "The Correct Answer is : " + quest + "\n" + "you have choosen : " + value,
             icon: "success",
             button: "Ok",
         });
@@ -183,7 +183,7 @@ function getCorrectAnswer(questions, index) {
         // alert("The Correct Answer is " + quest + "\n" + "your have choosen " + value + "\n" + "Uh No That's The wrong Choice..");
         swal({
             title: "Uh No That's The wrong Choice..",
-            text: "The Correct Answer is : " + quest + "\n" + "your have choosen : " + value,
+            text: "The Correct Answer is : " + quest + "\n" + "you have choosen : " + value,
             icon: "error",
             button: "Ok",
         });
@@ -463,7 +463,7 @@ $(document).ready(function () {
     $("#forward").on('click', function (e) {
         e.preventDefault();
         // addClickedAnswerToResult(questions, presentIndex, clicked);
-        document.getElementsByClassName('swal-overlay')[0].style.visibility = 'hidden';
+        // document.getElementsByClassName('swal-overlay')[0].style.visibility = 'hidden';
         // var k = document.getElementById("audio1");
         // k.pause();
         // var l = document.getElementById("audio2");
